@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+}
+
+.header {
+  height: 58px;
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid grey;
+}
+.slider {
+  position: absolute;
+  background-color: white;
+  left: 2%;
+  font-size: 25px;
+  border: 0;
+  height: 40px;
+  width: 40px;
+  top: 10%;
+}
+
+.title {
+  position: absolute;
+  font-family: monospace;
+  left: 40%;
+  font-size: 40px;
+  top: 10%;
+}
+
+.help {
+  border-radius: 50%;
+  position: absolute;
+  font-family: monospace;
+  color: black;
+  background-color: white;
+  border-color: black;
+  right: 8%;
+  font-size: 22px;
+  height: 30px;
+  width: 30px;
+  top: 20%;
+}
+
+.keyboard {
+  position: absolute;
+  height: 200px;
+  width: 700px;
+  left: 18%;
+}
+
+.keyboard button {
+  height: 60px;
+  width: 60px;
+  margin: 3px;
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+  font-size: 15px;
+  border: 0;
+  border-radius: 3px;
+  transition: background-color 2s, border-color 2s;
+}
+
+.keyboard .enter {
+  width: 120px;
+}
+.keyboard .backspace {
+  width: 70px;
+  font-size: 25px;
+}
+.keyboard .first-row {
+  height: 30%;
+  width: 100%;
+  margin-bottom: 1%;
+}
+
+.keyboard .second-row {
+  height: 30%;
+  width: 100%;
+  margin-bottom: 1%;
+  margin-left: 5%;
+}
+.keyboard .second-row {
+  height: 30%;
+  width: 100%;
+}
+
+.game {
+  margin-top: 13px;
+  height: 330px;
+  align-items: center;
+}
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5,
+.row-6 {
+  margin: 2px;
+  height: 50px;
+  width: 30%;
+  position: relative;
+  left: 33%;
+}
+.box {
+  display: inline-block;
+  height: 90%;
+  width: 18%;
+  border: 1px solid;
+  border-radius: 3px;
+  border-color: #c5c5c5;
+  font-family: sans-serif;
+  font-size: 45px;
+  padding-bottom: 3px;
+  text-align: center;
+  overflow: hidden;
+  transition: background-color 2s, transform 1s, border-color 2s;
+  /* animation: horizontal-shaking 0.5s; */
+}
+
+.shake {
+  animation: horizontal-shaking 0.5s;
+}
+
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.message {
+  height: 35px;
+  width: 100px;
+  color: white;
+  font-family: monospace;
+  font-size: medium;
+  border-radius: 3px;
+  text-align: center;
+  background-color: black;
+  position: absolute;
+  top: 18%;
+  left: 42.5%;
+}
+
+.hidden {
+  display: none;
+}
