@@ -1,3 +1,4 @@
+// prettier-ignore
 const wordlist = [
   "AAHED",
   "AALII",
@@ -12478,4 +12479,3 @@ const wordlist = [
   "ZYMES",
   "ZYMIC",
 ];
-export { wordlist };

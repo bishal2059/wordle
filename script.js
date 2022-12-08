@@ -1,4 +1,5 @@
-import { wordlist as checkWordList } from "./word.js";
+// import { wordlist as checkWordList } from "./word";
+const checkWordList = wordlist;
 
 const keyboard = document.querySelector(".keyboard");
 const message = document.querySelector(".message");
